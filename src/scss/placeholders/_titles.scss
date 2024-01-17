@@ -1,0 +1,15 @@
+%title-section {
+  font-family: $main-font;
+  font-size: $font-size-xxl;
+  color: $brand-color-primary-pure;
+  margin-top: 0;
+  text-align: left;
+  font-weight:$font-weight-700;
+
+  display: flex;
+  justify-content: flex-start;
+
+  @media (max-width: $tablet-max){
+    font-size: $font-size-lg;
+  }
+}

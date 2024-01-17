@@ -1,0 +1,59 @@
+$font-size-base: 14px; // Tamanho base, o que vai no "body"
+$font-title-base: 42px; // Tamanho base para titulos
+
+// FONT SIZES --------------------------------------------------
+
+$font-size-xxxs: 10px;
+$font-size-xxs: 12px;
+$font-size-xs: 14px;
+$font-size-sm: 16px;
+$font-size-md: 18px;
+$font-size-mdd: 19px;
+$font-size-ms: 20px;
+$font-size-lg: 21px;
+$font-size-xl: 24px;
+$font-size-medium: 26px;
+$font-size-medium-m: 28px;
+$font-size-xxl: 32px;
+$font-size-xxlll: 36px;
+$font-size-xxllll: 38px;
+$font-size-xxxl: 40px;
+$font-size-display: 48px;
+$font-size-giant: 64px;
+$font-size-titan: 72px;
+
+// Titles
+// Fontes para titulos
+$font-size-h1: $font-title-base; // 42
+$font-size-h2: ceil($font-size-h1 * 0.87); // 37
+$font-size-h3: ceil($font-size-h1 * 0.74); // 32
+$font-size-h4: ceil($font-size-h1 * 0.61); // 26
+$font-size-h5: ceil($font-size-h1 * 0.48); // 21
+$font-size-h6: ceil($font-size-h1 * 0.35); // 15
+
+// FONT WEIGHTS --------------------------------------------------
+
+$font-weight-200: 200; // EXTRA LIGHT
+$font-weight-300: 300; // LIGHT
+$font-weight-400: 400; // REGULAR
+$font-weight-500: 500; // REGULAR
+$font-weight-600: 600; // SEMI BOLD
+$font-weight-700: 700; // BOLD
+$font-weight-900: 900; // BLACK
+
+// LETTER SPACING --------------------------------------------------
+
+$letter-spacing-default: 0%;
+$letter-spacing-sm: 4%;
+$letter-spacing-md: 8%;
+$letter-spacing-lg: 16%;
+
+// LINE HEIGHT --------------------------------------------------
+
+$line-height-default: 100%; // DEFAULT
+$line-height-xs: 115%;
+$line-height-sm: 120%;
+$line-height-md: 133%;
+$line-height-lg: 150%;
+$line-height-xl: 170%;
+$line-height-xxl: 200%;

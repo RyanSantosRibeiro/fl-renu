@@ -1,0 +1,70 @@
+// MEDIA QUERIES ----------------------------------
+$mobile-s-max: 325px;
+$mobile-m-max: 380px;
+$mobile-max: 641px;
+$tablet-max: 991px;
+$desktop-max: 1367px;
+$wide: 1366px;
+$wide-min-max: 1680px;
+$wide-max: 1919px;
+
+$tablet-min: $mobile-max + 1;
+$desktop-min: $tablet-max + 1;
+$wide-min: $desktop-max + 1;
+$ultrawide-min: $wide-max + 1;
+
+// Minimmum medias - mobile first concept
+@mixin mobile {
+  @media (max-width: #{$mobile-max}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$tablet-max}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: #{$desktop-max}) {
+    @content;
+  }
+}
+
+@mixin wide {
+  @media (max-width: #{$wide-max}) {
+    @content;
+  }
+}
+
+@mixin ultrawide {
+  @media (max-width: #{$ultrawide-max}) {
+    @content;
+  }
+}
+
+// Media between devices
+@mixin start-mobile {
+  @media (max-width: #{$mobile-max}) {
+    @content;
+  }
+}
+
+@mixin tablet-desktop {
+  @media (min-width: #{$tablet-min}) and (max-width: #{$tablet-max}) {
+    @content;
+  }
+}
+
+@mixin desktop-wide {
+  @media (min-width: #{$desktop-min}) and (max-width: #{$desktop-max}) {
+    @content;
+  }
+}
+
+@mixin wide-ultrawide {
+  @media (min-width: #{$wide-min}) and (max-width: #{$wide-max}) {
+    @content;
+  }
+}

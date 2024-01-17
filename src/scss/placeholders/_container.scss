@@ -1,0 +1,52 @@
+%container {
+  margin: 0 auto;
+  padding: 0 15px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @include desktop {
+    padding: 0;
+    width: 100%;
+    max-width: 1330px;
+  }
+
+  @include ultrawide {
+    padding: 0;
+    width: 100%;
+    max-width: 1330px;
+  }
+}
+
+%container-full {
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @include desktop {
+    padding: 0 0px;
+    width: 100%;
+    max-width: 1824px;
+  }
+}
+
+%container-ultrawide {
+  padding: 0 15px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @include ultrawide {
+    width: 100%;
+    max-width: 1740px;
+    min-width: $desktop-min - 30;
+  }
+}

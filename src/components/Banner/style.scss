@@ -1,0 +1,397 @@
+@import './../../scss/all.scss';
+
+.banner {
+    background-image: $gradient-1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    animation-name: zoomBg;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0, 1.01, 0.4, 0.99);
+
+    @keyframes zoomBg {
+        0% {
+          background-size: 100%;
+        }
+        100% {
+          background-size: 118%;
+        }
+      }
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#000, .7);
+        position: absolute;
+    }
+
+    @include mobile {
+        height: 500px;
+    }
+    
+    &__image {
+        max-width: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+    }
+
+    &__tree {
+        width: 105vw;
+        position: absolute;
+        top: 0;
+    }
+
+    &__text {
+        
+        position: absolute;
+        top: 45%;
+        left: 5%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 16px;
+
+        max-width: 90vw;
+
+        @include tablet {
+            top: 20%;
+        }
+
+
+        h2 {
+            @include fade("in","right", 200px, 2s, 200ms);
+            color: rgb(228, 228, 228);
+            font-size: 130px;
+            line-height: 110px;
+            font-weight: $font-weight-600;
+            letter-spacing: 2px;
+
+            background: -webkit-linear-gradient(#eee, #eee, #eee, $color-4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            @include tablet {
+                line-height: 48px;
+                font-size: 50px;
+                text-align: left;
+            }
+            
+            @include mobile {
+                line-height: 28px;
+                font-size: 28px;
+            }
+        }
+
+        p {
+            @include fade("in","right", 200px, 2s , 400ms);
+            color: rgb(207, 207, 207);
+            font-size: 40px;
+            line-height: 40px;
+            font-weight: $font-weight-500;
+
+            @include tablet {
+                font-size: 20px;
+                line-height: 26px;
+                text-align: left;
+            }
+            @include mobile {
+                line-height: 16px;
+                font-size: 16px;
+            }
+        }
+
+        &__buttons {
+            @include fade("in","right", 200px, 2s, 800ms);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        
+            a {
+                color: $color-1;
+                padding: 10px 20px;
+                background-color: $color-4;
+                border-radius: 16px;
+                font-weight: 700;
+                font-size: 20px;
+                letter-spacing: 1px;
+            }
+        }
+
+        &__arrow {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            max-height: 0px;
+            transition: 300ms all cubic-bezier(0.13, 1.02, 0.32, 0.97);
+            transform: rotate(-90deg);
+            width: 20px;
+        }
+    }
+
+    &__arrow {
+        @include fade("in","up", 200px, 1s);
+        background-color: rgba($color-7, $alpha: .5);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+
+        p {
+            color: $color-4;
+            font-weight: $font-weight-600;
+        }
+
+        img {
+            width: 40px;
+            height: auto;
+        }
+
+        &--left {
+            cursor: pointer;
+            transition: 800ms all cubic-bezier(0.08, 0.96, 0.29, 0.96);
+            transform: translateX(0px);
+
+
+            &:hover {
+                transform: translateX(-10px);
+            }
+        }
+
+        &--right {
+            cursor: pointer;
+            transition: 800ms all cubic-bezier(0.08, 0.96, 0.29, 0.96);
+            transform: translateX(0px);
+
+
+            &:hover {
+                transform: translateX(10px);
+            }
+        }
+    }
+
+
+    // Banner
+
+    &__mockup {
+        
+        position: absolute;
+        width: 450px;
+        height: auto;
+        filter:opacity(.9) blur(.75px);
+        
+        &1 {
+            @include fade("in","up", 200px, 3s);
+            left: 60%;
+            top: 20%;
+            rotate: -45deg;
+
+            @include tablet {
+                left: 20%;
+                top: 30%;
+            }
+            
+            @include mobile {
+                top: 40%;
+                width: 300px
+            }
+        }
+        
+        &2 {
+            @include fade("in","right", 200px, 3s);
+            width: 100px;
+            left: 59%;
+            top: 66%;
+            rotate: -45deg;
+
+            @include tablet {
+                left: 18%;
+                top: 72%;
+            }
+
+            @include mobile {
+                width: 60px;
+                top: 80%;
+                left: 20%;
+            }
+        }
+        
+        &3 {
+            @include fade("in","left", 200px, 3s);
+            width: 300px;
+            left: 80%;
+            top: 40%;
+            rotate: -45deg;
+
+            @include tablet {
+                left: 60%;
+                top: 65%;
+            }
+
+            @include mobile {
+                width: 200px;
+                top: 80%;
+                left: 60%;
+            }
+        }
+    }
+
+    &__shape1 {
+        position: absolute;
+        width: 100px;
+        height: auto;
+        transform: translate(-50%, -50%);
+
+        &-1 {
+            left: 50%;
+            top: 13%;
+        }
+
+        &-2 {
+            left: 70%;
+            top: 50%;
+        }
+
+        &-3 {
+            left: 30%;
+            top: 80%;
+        }
+    }
+
+    &__shape2 {
+        position: absolute;
+        width: 400px;
+        height: auto;
+        transform: translate(-50%, -50%);
+
+        &-1 {
+            left: 20%;
+            top: 40%;
+        }
+
+        &-2 {
+            width: 150px;
+            left: 70%;
+            top: 80%;
+        }
+
+        &-3 {
+            left: 30%;
+            top: 80%;
+        }
+    }
+
+    &__shape3 {
+        position: absolute;
+        width: 200px;
+        height: auto;
+        transform: translate(-50%, -50%);
+
+        &-1 {
+            left: 70%;
+            top: 0%;
+        }
+
+        &-2 {
+            width: 150px;
+            left: 70%;
+            top: 80%;
+        }
+
+        &-3 {
+            left: 30%;
+            top: 80%;
+        }
+    }
+
+    &__shape4 {
+        position: absolute;
+        width: 100px;
+        height: auto;
+        transform: translate(-50%, -50%);
+
+        &-1 {
+            left: 40%;
+            top: 90%;
+        }
+
+        &-2 {
+            width: 150px;
+            left: 70%;
+            top: 80%;
+        }
+
+        &-3 {
+            left: 30%;
+            top: 80%;
+        }
+    }
+
+    &__shape5 {
+        position: absolute;
+        width: 200px;
+        height: auto;
+        transform: translate(-50%, -50%);
+
+        &-1 {
+            left: 95%;
+            top: 30%;
+        }
+
+        &-2 {
+            width: 150px;
+            left: 70%;
+            top: 80%;
+        }
+
+        &-3 {
+            left: 30%;
+            top: 80%;
+        }
+    }
+
+    &__shape6 {
+        position: absolute;
+        width: 400px;
+        height: auto;
+        transform: translate(-50%, -50%);
+
+        &-1 {
+            left: 83%;
+            top: 75%;
+            transform: rotate(45deg);
+        }
+
+        &-2 {
+            width: 150px;
+            left: 70%;
+            top: 80%;
+        }
+
+        &-3 {
+            left: 30%;
+            top: 80%;
+        }
+    }
+
+}

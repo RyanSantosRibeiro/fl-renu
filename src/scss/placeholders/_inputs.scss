@@ -1,0 +1,20 @@
+%input-text {
+  font-family: $main-font;
+  font-size: $font-size-sm;
+  border: 1px solid transparent;
+  padding: initial 12px;
+  display: block;
+  width: 100%;
+  box-shadow: $shadow-level-1;
+  transition: all .2s;
+
+  &:hover {
+    border-color: $color-1-700;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+    border-color: $neutral-color-low-medium;
+  }
+}

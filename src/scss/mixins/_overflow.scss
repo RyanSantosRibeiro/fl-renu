@@ -1,0 +1,5 @@
+@mixin overflow($type: scroll) {
+  // SPECIALLY USED TO CUSTOMIZE APPLE SYSTEM COMPONENTS
+  overflow-y: $type;
+  overflow-x: $type;
+}

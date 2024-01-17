@@ -1,0 +1,58 @@
+// HEADINGS
+
+/*
+As Unidades Multiplicadoras ($multiplier) - estas unidades vão servir apenas para o caso de haver família de fontes com tamanho especial
+caso seja preciso, chamar o mixin respectivo passando a unidade, como no exemplo abaixo
+
+EXEMPLO:
+h1 {
+  @include heading-1(2); SENDO '2' IGUAL A 200% DO TAMANHO DAS FONTES NATURAIS
+}
+
+ATENÇÃO:  ******* NAO ALTERAR NADA NESTE ARQUIVO *******
+*/
+// @for $i from 1 through 6 {
+//   h#{$i} {
+//     margin: 0;
+//     padding: 0;
+//   }
+// }
+
+@mixin heading-1($multiplier: 1) {
+  font-size: $font-size-display * $multiplier;
+
+  @include tablet {
+    font-size: $font-size-xxxl * $multiplier;
+  }
+}
+
+@mixin heading-2($multiplier: 1) {
+  font-size: $font-size-xxl * $multiplier;
+  @include tablet {
+    font-size: $font-size-lg * $multiplier;
+  }
+}
+
+@mixin heading-3($multiplier: 1) {
+  font-size: $font-size-xxl * $multiplier;
+
+  @include tablet {
+    font-size: $font-size-xl * $multiplier;
+  }
+}
+
+@mixin heading-4($multiplier: 1) {
+  font-size: $font-size-xl * $multiplier;
+
+  @include tablet {
+    font-size: $font-size-lg * $multiplier;
+  }
+}
+
+@mixin heading-5($multiplier: 1) {
+  font-size: $font-size-lg * $multiplier;
+
+  @include tablet {
+    font-size: $font-size-md * $multiplier;
+  }
+}

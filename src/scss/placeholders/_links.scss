@@ -1,0 +1,42 @@
+%link {
+  letter-spacing: 1px;
+  font-weight: $font-weight-400;
+  font-size: $font-size-xs;
+  color: $text-color-pure;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color:$text-color-light;
+    text-decoration: underline;
+  }
+}
+
+%link-menu {
+  letter-spacing: 1px;
+  font-weight:$font-weight-700;
+  font-size: $font-size-xs;
+  color: $text-color-pure;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-size: 350%;
+    position: absolute;
+    top: 10px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $text-color-pure;
+
+    &::after {
+      transition: all 0.5s ease-in-out;
+      background-position: 75%;
+    }
+  }
+}

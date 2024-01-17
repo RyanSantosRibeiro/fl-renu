@@ -1,0 +1,82 @@
+@mixin icon-button(
+  $size: 'medium',
+  $icon: 'none',
+  $radius: 'none',
+  $state: 'normal',
+  $color: $black
+) {
+  @extend %icon-button;
+
+  // SIZE ----------------------------------------------
+  @if $size == 'small' {
+    width: 24px;
+
+    &::before {
+      width: 11px;
+    }
+  }
+  @if $size == 'medium' {
+    width: 36px;
+
+    &::before {
+      width: 15px;
+    }
+  }
+  @if $size == 'large' {
+    width: 48px;
+
+    &::before {
+      width: 22px;
+    }
+  }
+  // ---------------------------------------------- SIZE
+
+  // ---------------------------------------------- ICON
+  @if $icon != 'none' {
+    &::before {
+      content: '';
+      background: url('../../../assets/svg/#{$icon}.svg') center no-repeat;
+      background-size: contain;
+    }
+  }
+  // ---------------------------------------------- ICON
+
+  // ---------------------------------------------- RADIUS
+  @if $radius == 'none' {
+    border-radius: $border-radius-none;
+    border-color: transparent;
+  }
+  @if $radius == 'xs' {
+    border-radius: $border-radius-sm / 2;
+  }
+  @if $radius == 'sm' {
+    border-radius: $border-radius-sm;
+  }
+  @if $radius == 'elipse' {
+    border-radius: $border-radius-pill;
+  }
+  // ---------------------------------------------- RADIUS
+
+  // STATE ----------------------------------------------
+  @if $state != 'default' {
+    @if $state == 'normal' {
+      background-color: $color;
+    }
+    @if $state == 'outline' {
+      background-color: transparent;
+      border-color: $color;
+    }
+    @if $state == 'disabled' {
+      background-color: #d1d1d1 !important;
+      pointer-events: none !important;
+
+      &::before {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  // ---------------------------------------------- STATE
+
+  @content;
+}

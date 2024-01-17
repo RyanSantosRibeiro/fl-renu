@@ -1,0 +1,108 @@
+// Base
+%button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  border-radius: $cta-radius;
+
+  width: fit-content;
+  text-align: center;
+  cursor: pointer;
+
+  padding-left: 24px;
+  padding-right: 24px;
+
+  border: 1px solid transparent;
+  transition: 200ms all ease-in-out;
+}
+
+// Types
+%button-default {
+
+  font-weight:$font-weight-700;
+  text-transform: none;
+  color: $text-color-white;
+  font-family: $main-font;
+
+  // background: $cta-pure;
+
+  &:focus,
+  &:active,
+  &:hover {
+    // background: $cta-hover;
+  }
+
+  &::before,
+  &::after {
+    aspect-ratio: 1;
+  }
+}
+
+%button-outline {
+  background-color: transparent;
+  // border-color: $cta-pure;
+  cursor: pointer;
+  // color: $cta-pure;
+
+  &:focus,
+  &:active,
+  &:hover {
+    // background-color: $cta-hover;
+    color: $text-color-white;
+  }
+
+  &::before,
+  &::after {
+    aspect-ratio: 1;
+  }
+}
+
+%button-inline {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  // color: $cta-pure;
+
+  &:focus,
+  &:active,
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &::before,
+  &::after {
+    aspect-ratio: 1;
+  }
+}
+
+%button-custom-1 {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  // color: $cta-pure;
+
+  &:focus,
+  &:active,
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &::before,
+  &::after {
+    aspect-ratio: 1;
+  }
+}
+
+%button-disabled {
+  background-color: #d1d1d1 !important;
+  pointer-events: none;
+  cursor: initial;
+  color: #9e9e9e !important;
+
+  &::before,
+  &::after {
+    opacity: 0.2;
+  }
+}
+

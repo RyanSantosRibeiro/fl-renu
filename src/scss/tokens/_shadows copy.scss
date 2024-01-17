@@ -1,0 +1,15 @@
+/*
+SHADOWS VARIABLES
+*/
+$shadow-color: #000000;
+$shadow-opacity: rgba($shadow-color, $opacity-level-light);
+
+// --- Base Shadows
+$shadow-level-1: 0 0 10px $shadow-opacity;
+$shadow-level-2: 0 4px 6px $shadow-opacity;
+$shadow-level-3: 0 4px 8px $shadow-opacity;
+$shadow-level-4: 0 8px 24px $shadow-opacity;
+$shadow-level-5: 0 16px 32px $shadow-opacity;
+$shadow-level-6: 0 16px 48px $shadow-opacity;
+$shadow-level-7: 0 32px 32px $shadow-opacity;
+$shadow-level-8: 0 32px 48px $shadow-opacity;

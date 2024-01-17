@@ -1,0 +1,165 @@
+// Color
+$color-1: #BDD7AC; // Cor principal da marca
+$color-2: #96C4A6; // Cor secundária da marca
+$color-3: #4FA8AE; // Cor do callToAction Principal (ex.: botão comprar)
+$color-4: #144A41; // CallToAction Secundário (ex.: botão de newsletter)
+$color-5: #ced4da; // Cor livre
+$color-6: #dee2e6; // Cor Neutra (ex.: cinza)
+$color-7: #f5f7fb; // Cor Neutra (ex.: cinza)
+$color-8: #212529; // Cor Neutra (ex.: cinza)
+
+$gradient-1: linear-gradient(to left bottom, #88d4e0, #a8dced, #c6e4f5, #e0edf9, #f5f7fb); // Cor Neutra (ex.: cinza)
+
+// --- Neutral Colors --- NUNCA MEXER
+$black: #000000;
+$specific: #252525;
+$neutral-color-low-pure: #000000;
+$neutral-color-low-light: #a3a3a3;
+$neutral-color-low-medium: #666666;
+$neutral-color-low-dark: #292929;
+$neutral-4: #B8B8B8;
+$neutral-3: #F5F5F5;
+$neutral-5: #777777;
+$neutral-6: #E2E2E2;
+$white: #ffffff;
+$neutral-color-high-pure: #ffffff;
+$neutral-color-high-light: #F8F9FA;
+$neutral-color-high-medium: #e0e0e0;
+$neutral-color-high-dark: #cccccc;
+$neutral: #D9D9D9;
+$neutral-grey: #777777;
+$neutral-highlight: rgba(245, 245, 245, 1);
+// --- Neutral Colors --- NUNCA MEXER
+
+// --- Text Colors
+$text-color-pure: #353535; // TROCAR DE ACORDO COM O PROJETO
+$text-color-white: lighten($text-color-pure, 100%);
+$text-color-light: lighten($text-color-pure, 20%);
+$text-color-medium: darken($text-color-pure, 8%);
+$text-color-dark: darken($text-color-pure, 10%);
+$text-color-gold: rgba(127, 102, 62, 1);
+
+$high-pure: #ffffff;
+$high-light: #f5f5f5;
+$high-medium: #e0e0e0;
+$high-dark: #cccccc;
+
+$low-pure: #000000;
+$low-light: #a3a3a3;
+$low-medium: #666666;
+$low-dark: #292929;
+
+$support-1: #e04b42;
+$support-2: #42bc9e;
+$support-3: #5c9c40;
+$support-4: #477831;
+$support-5: #b61348;
+$support-6: #ec526b;
+
+$success-pure: #afe86d;
+$success-light: #e5fdca;
+$success-medium: #caf598;
+$success-dark: #79b03a;
+
+$warning-pure: #ffc542;
+$warning-light: #ffefc9;
+$warning-medium: #ffe19c;
+$warning-dark: #d19200;
+
+$error-pure: #ff6b6b;
+$error-light: #ffd6d6;
+$error-medium: #ffb8b8;
+$error-dark: #cc1818;
+
+// Cor 1
+$color-1-50: lighten($color-1, 20%);
+$color-1-100: lighten($color-1, 16%);
+$color-1-200: lighten($color-1, 12%);
+$color-1-300: lighten($color-1, 8%);
+$color-1-400: lighten($color-1, 4%);
+$color-1-500: $color-1;
+$color-1-600: darken($color-1, 5%);
+$color-1-700: darken($color-1, 10%);
+$color-1-800: darken($color-1, 15%);
+$color-1-900: darken($color-1, 20%);
+
+// Cor 2
+$color-2-50: lighten($color-2, 20%);
+$color-2-100: lighten($color-2, 16%);
+$color-2-200: lighten($color-2, 12%);
+$color-2-300: lighten($color-2, 8%);
+$color-2-400: lighten($color-2, 4%);
+$color-2-500: $color-2;
+$color-2-600: darken($color-2, 5%);
+$color-2-700: darken($color-2, 10%);
+$color-2-800: darken($color-2, 15%);
+$color-2-900: darken($color-2, 20%);
+
+// Cor 3
+$color-3-50: lighten($color-3, 20%);
+$color-3-100: lighten($color-3, 16%);
+$color-3-200: lighten($color-3, 12%);
+$color-3-300: lighten($color-3, 8%);
+$color-3-400: lighten($color-3, 4%);
+$color-3-500: $color-3;
+$color-3-600: darken($color-3, 5%);
+$color-3-700: darken($color-3, 10%);
+$color-3-800: darken($color-3, 15%);
+$color-3-900: darken($color-3, 20%);
+
+// Cor 4
+$color-4-50: lighten($color-4, 20%);
+$color-4-100: lighten($color-4, 16%);
+$color-4-200: lighten($color-4, 12%);
+$color-4-300: lighten($color-4, 8%);
+$color-4-400: lighten($color-4, 4%);
+$color-4-500: $color-4;
+$color-4-600: darken($color-4, 5%);
+$color-4-700: darken($color-4, 10%);
+$color-4-800: darken($color-4, 15%);
+$color-4-900: darken($color-4, 20%);
+
+// Cor 5
+$color-5-50: lighten($color-5, 20%);
+$color-5-100: lighten($color-5, 16%);
+$color-5-200: lighten($color-5, 12%);
+$color-5-300: lighten($color-5, 8%);
+$color-5-400: lighten($color-5, 4%);
+$color-5-500: $color-5;
+$color-5-600: darken($color-5, 5%);
+$color-5-700: darken($color-5, 10%);
+$color-5-800: darken($color-5, 15%);
+$color-5-900: darken($color-5, 20%);
+
+// Cor 6
+$color-6-50: lighten($color-6, 20%);
+$color-6-100: lighten($color-6, 16%);
+$color-6-200: lighten($color-6, 12%);
+$color-6-300: lighten($color-6, 8%);
+$color-6-400: lighten($color-6, 4%);
+$color-6-500: $color-6;
+$color-6-600: darken($color-6, 5%);
+$color-6-700: darken($color-6, 10%);
+$color-6-800: darken($color-6, 15%);
+$color-6-900: darken($color-6, 20%);
+
+
+
+// Lixo
+/*
+COLOR VARIABLES - ARQUIVO BASE
+*/
+
+//Base colors
+// --- Primary Colors
+
+// $brand-color-primary-pure: #010101; // TROCAR DE ACORDO COM O PROJETO
+// $brand-color-primary-light: lighten($brand-color-primary-pure, 20%);
+// $brand-color-primary-medium: darken($brand-color-primary-pure, 8%);
+// $brand-color-primary-dark: darken($brand-color-primary-pure, 10%); 
+
+// // --- Secondary Colors
+// $brand-color-secondary-pure: #F7CD47; // TROCAR DE ACORDO COM O PROJETO
+// $brand-color-secondary-light: rgba(247, 205, 71, 0.7);
+// $brand-color-secondary-medium: darken($brand-color-secondary-pure, 8%);
+// $brand-color-secondary-dark: darken($brand-color-secondary-pure, 10%);

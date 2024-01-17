@@ -1,0 +1,40 @@
+@mixin input($size: 'medium', $fs: $font-size-sm, $radius: 'none') {
+  @extend %input-text;
+
+  // SIZE ----------------------------------------------
+  @if $size == 'small' {
+    height: 32px;
+    font-size: $font-size-xs;
+  }
+  @if $size == 'medium' {
+    height: 40px;
+    font-size: $font-size-sm;
+  }
+  @if $size == 'large' {
+    height: 48px;
+    font-size: $font-size-sm;
+  }
+
+  // RADIUS ----------------------------------------------
+  @if $radius != 'none' {
+    @if $radius == 'sm' {
+      border-radius: $border-radius-sm;
+    }
+    @if $radius == 'md' {
+      border-radius: $border-radius-md;
+    }
+    @if $radius == 'lg' {
+      border-radius: $border-radius-lg;
+    }
+    @if $radius == 'pill' {
+      border-radius: $border-radius-pill;
+    }
+    @if $radius == 'circular' {
+      border-radius: $border-radius-circular;
+    }
+  } @else {
+    border-radius: $border-radius-none;
+  }
+
+  @content;
+}

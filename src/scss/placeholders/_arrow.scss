@@ -1,0 +1,112 @@
+%arrow {
+  border: none;
+  border-radius: 0px;
+  background-color: rgba($neutral-color-high-medium, .4) !important;
+  border-radius: $border-radius-pill;
+  color: $brand-color-primary-pure;
+  text-align: center;
+  transition: all 0.2s;
+
+  height: 45px;
+  width: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include desktop {
+    width: 65px;
+    height: 65px;
+  }
+
+  &.sliderArrows--header__tooltip {
+    background-color: transparent !important;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    // Left
+    &.swiperCaretPrev,
+    &.sliderLeftArrow,
+    &.arrowLeft {
+      @include desktop {
+        transform: translateX(-25px);
+      }
+    }
+
+    // Right
+    &.swiperCaretNext,
+    &.sliderRightArrow,
+    &.arrowRight {
+      @include desktop {
+        transform: translateX(25px);
+      }
+    }
+  }
+
+  // Left
+  &.swiperCaretPrev,
+  &.sliderLeftArrow,
+  &.arrowLeft {
+    // transform: translateX(15px);
+    @include desktop {
+      transform: translateX(-35px);
+    }
+    &::before {
+      height: 25px;
+      width: 25px;
+      content: url(assets/svg/icon-arrow-left.svg);
+      transform: scale(.6);
+      @include desktop {
+        transform: scale(1);
+      }
+    }
+  }
+
+  // Right
+  &.swiperCaretNext,
+  &.sliderRightArrow,
+  &.arrowRight {
+    // transform: translateX(-15px);
+    @include desktop {
+      transform: translateX(35px);
+    }
+    &::before {
+      height: 25px;
+      width: 25px;
+      content: url(assets/svg/icon-arrow-right.svg);
+      transform: scale(.6);
+      @include desktop {
+        transform: scale(1);
+      }
+    }
+  }
+
+  .caretIcon {
+    display: none !important;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+    display: none;
+  }
+}
+
+%arrow-product {
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  transition: all ease-in 0.2s;
+  opacity: 0.7;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    opacity: 1;
+  }
+}

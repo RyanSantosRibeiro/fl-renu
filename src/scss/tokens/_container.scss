@@ -1,0 +1,27 @@
+// BREAKPOINTS AND GRIDS
+$grid-columns: 10;
+$grid-gutter: 15px;
+
+// .container {
+//   width: 100%;
+//   padding: $grid-gutter;
+
+//   margin-right: auto;
+//   margin-left: auto;
+
+//   @include desktop {
+//     max-width: 968px;
+//   }
+//   @include wide {
+//     max-width: 1240px;
+//   }
+//   @include ultrawide {
+//     max-width: 1920px;
+//   }
+  
+//   &-fluid {
+//     width: 100%;
+//     max-width: 100% !important;
+//     padding: $grid-gutter;
+//   }
+// }

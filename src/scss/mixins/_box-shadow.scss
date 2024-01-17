@@ -1,0 +1,33 @@
+@mixin box-shadow(
+  $type: "md",
+  $hover: "false"
+) {
+  $size: 0.1;
+
+  // small
+  @if $type == 'sm' {
+    $size: 0.1;
+  }
+
+  // Medium
+  @if $type == 'md' {
+    $size: 0.2;
+  }
+
+  // Large
+  @if $type == 'lg' {
+    $size: 0.3;
+  }
+
+
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, $size);
+
+  // Large
+  @if $hover == 'true' {
+
+    &:hover {
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, $size + 0.1);
+    }
+  }
+}
+

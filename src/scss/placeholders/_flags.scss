@@ -1,0 +1,17 @@
+//BASE
+%flag-hightlight {
+  background-color: $color-1-500;
+  font-size: $font-size-xxxs;
+  font-weight:$font-weight-700;
+  width: fit-content;
+  text-transform: capitalize;
+  color: $white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: $color-1-700;
+  }
+}

@@ -1,0 +1,104 @@
+@mixin fade(
+  $fade: "in",
+  $type: "zoom",
+  $factor: .7,
+  $animation-duration: 1s,
+  $animation-delay: 0s,
+  $animation-fill-mode: both,
+  $animation-timing-function: cubic-bezier(0.24, 0.98, 0.38, 0.99)
+) {
+
+  animation-duration: $animation-duration;
+  animation-fill-mode: $animation-fill-mode;
+  animation-timing-function: $animation-timing-function;
+  animation-delay: $animation-delay;
+
+
+  // FadeIn
+  @if $fade == 'in' {
+    opacity: 0;
+  }
+
+  // FadeOut
+  @if $fade == 'out' {
+    opacity: 1;
+    animation-direction: reverse;
+  }
+
+  @if $type == 'zoom' {
+    animation-name: zoomAnimation;
+    transform: scale($factor);
+  }
+
+  @if $type == 'right' {
+    animation-name: rightAnimation;
+    transform: translateX(-$factor);
+  }
+  @if $type == 'left' {
+    animation-name: leftAnimation;
+    transform: translateX($factor);
+  }
+
+  // Up
+  @if $type == 'up' {
+    animation-name: upAnimation;
+    transform: translateY($factor);
+  }
+  // Up
+  @if $type == 'down' {
+    animation-name: downAnimation;
+    transform: translateY(-$factor);
+  }
+
+  @keyframes zoomAnimation {
+    0% {
+      transform: scale($factor);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes rightAnimation {
+    0% {
+      transform: translateX(-$factor);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes leftAnimation {
+    0% {
+      transform: translateX($factor);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes upAnimation {
+    0% {
+      transform: translateY($factor);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes downAnimation {
+    0% {
+      transform: translateY(-$factor);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+}

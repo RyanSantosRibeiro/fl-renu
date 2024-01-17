@@ -1,0 +1,43 @@
+@mixin text(
+  $fs: 'sm',
+  $fc: $text-color-pure-200,
+  $fw: $font-weight-400,
+  $ff: $main-font
+) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  color: $fc;
+
+  @if $fs == 'lg' {
+    font-size: $font-size-md;
+
+    @include tablet {
+      font-size: $font-size-sm;
+    }
+  }
+
+  @if $fs == 'md' {
+    font-size: $font-size-sm;
+
+    @include tablet {
+      font-size: $font-size-xs;
+    }
+  }
+
+  @if $fs == 'md' {
+    font-size: $font-size-sm;
+
+    @include tablet {
+      font-size: $font-size-xs;
+    }
+  }
+
+  @if $fs == 'sm' {
+    font-size: $font-size-xs;
+
+    @include tablet {
+      font-size: $font-size-xxs;
+    }
+  }
+}
