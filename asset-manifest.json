@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/fl-renu/static/css/main.d1cd6c68.css",
-    "main.js": "/fl-renu/static/js/main.a829a898.js",
+    "main.css": "/fl-renu/static/css/main.f2d71ba9.css",
+    "main.js": "/fl-renu/static/js/main.317ae4e3.js",
     "static/media/bg.jpg": "/fl-renu/static/media/bg.2fa00b2d8c72bea66a7d.jpg",
+    "static/media/biogas.png": "/fl-renu/static/media/biogas.4431ccbd6f9330464483.png",
     "static/media/Dagelland-8MB7B.ttf": "/fl-renu/static/media/Dagelland-8MB7B.05a27b02a356b2622da9.ttf",
     "static/media/logo.png": "/fl-renu/static/media/logo.bf9210bf61ef544599b5.png",
     "static/media/icon4.png": "/fl-renu/static/media/icon4.22e34f9c13fb47b706d7.png",
     "static/media/icon3.png": "/fl-renu/static/media/icon3.49afff4b87190561de80.png",
     "static/media/icon2.png": "/fl-renu/static/media/icon2.4089a021f6681af1eabe.png",
     "index.html": "/fl-renu/index.html",
-    "main.d1cd6c68.css.map": "/fl-renu/static/css/main.d1cd6c68.css.map",
-    "main.a829a898.js.map": "/fl-renu/static/js/main.a829a898.js.map"
+    "main.f2d71ba9.css.map": "/fl-renu/static/css/main.f2d71ba9.css.map",
+    "main.317ae4e3.js.map": "/fl-renu/static/js/main.317ae4e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1cd6c68.css",
-    "static/js/main.a829a898.js"
+    "static/css/main.f2d71ba9.css",
+    "static/js/main.317ae4e3.js"
   ]
 }
