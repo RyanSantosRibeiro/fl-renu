@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.47ce2664.css",
+    "main.js": "/static/js/main.a4c3aa6c.js",
+    "static/media/bg.jpg": "/static/media/bg.2fa00b2d8c72bea66a7d.jpg",
+    "static/media/Dagelland-8MB7B.ttf": "/static/media/Dagelland-8MB7B.05a27b02a356b2622da9.ttf",
+    "static/media/logo.png": "/static/media/logo.bf9210bf61ef544599b5.png",
+    "static/media/icon4.png": "/static/media/icon4.22e34f9c13fb47b706d7.png",
+    "static/media/icon3.png": "/static/media/icon3.49afff4b87190561de80.png",
+    "static/media/icon2.png": "/static/media/icon2.4089a021f6681af1eabe.png",
+    "index.html": "/index.html",
+    "main.47ce2664.css.map": "/static/css/main.47ce2664.css.map",
+    "main.a4c3aa6c.js.map": "/static/js/main.a4c3aa6c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47ce2664.css",
+    "static/js/main.a4c3aa6c.js"
+  ]
+}
