@@ -28,7 +28,7 @@ const Header = () => {
         <div className={`header ${window.location.hash == '' ? 'home': window.location.hash == '#/brenno-mnz' ? 'home' : ''}`} id='header'>
             <div className='container-fluid'>
                 <div className='header__logo'>
-                    <a href='/'>
+                    <a href='/fl-renu'>
                         <img className='' src={logo} alt=''/>
                     </a>
                 </div>
@@ -40,12 +40,12 @@ const Header = () => {
                 <ul className={`header__menu ${open?'open':''}`}>
                     {/* <li>{window.location.hash}</li> */}
                     <img className='' src={fecha} alt='' onClick={()=>setOpen(!open)}/>
-                    <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/porque-biometano'>Porque biometano?</Link></li>
-                    <li><Link to='/reno'>A Reno</Link></li>
-                    <li><Link to='/reno'>Para Consumidores</Link></li>
-                    <li><Link to='/reno'>Para Produtores Rurais</Link></li>
-                    <li><Link to='/reno'>Nossos Contatos</Link></li>
+                    <li><Link to='/fl-renu'>Home</Link></li>
+                    <li><Link to='/fl-renu'>Porque biometano?</Link></li>
+                    <li><Link to='/fl-renu'>A Reno</Link></li>
+                    <li><Link to='/fl-renu'>Para Consumidores</Link></li>
+                    <li><Link to='/fl-renu'>Para Produtores Rurais</Link></li>
+                    <li><Link to='/fl-renu'>Nossos Contatos</Link></li>
 
                     
                 </ul>

@@ -23,6 +23,7 @@ function App() {
     <Header />
     <Routes>
       <Route exact path="/" element={<Home />}/>
+      <Route exact path="/fl-renu" element={<Home />}/>
       <Route exact path="/me" element={<Me />} />
       {/* <Route path="users" element={<Users />}>
         <Route path="me" element={<OwnUserProfile />} />

@@ -4,6 +4,7 @@ import image1 from '../../assets/img/biometano/icon1.png';
 import image2 from '../../assets/img/biometano/icon2.png';
 import image3 from '../../assets/img/biometano/icon3.png';
 import image4 from '../../assets/img/biometano/icon4.png';
+import biogas from '../../assets/img/biometano/biogas.png';
 import $ from 'jquery';
 
 
@@ -25,6 +26,9 @@ const Biometano = () => {
                 <h2 className='default-title'>Porque biometano ?</h2>
             </div>
             <div className="container">
+                <div className='biometano__image'  style={{backgroundImage: `url(${biogas})`}}>
+                    {/* <img src={biogas}/> */}
+                </div>
                 <ul>
                     <li>
                     Biometano é um produto derivado da purificação (upgrade) do biogás, que é o gás retirado do processo de decomposição anaeróbica (na ausência de oxigênio) de resíduos orgânicos. Estes resíduos orgânicos podem vir de lixo, esgoto urbano, agricultura, pecuária, suinocultura e gado leiteiro.
