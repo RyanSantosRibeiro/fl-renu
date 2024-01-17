@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/fl-renu/static/css/main.f2d71ba9.css",
+    "main.css": "/fl-renu/static/css/main.09efa43f.css",
     "main.js": "/fl-renu/static/js/main.317ae4e3.js",
     "static/media/bg.jpg": "/fl-renu/static/media/bg.2fa00b2d8c72bea66a7d.jpg",
     "static/media/biogas.png": "/fl-renu/static/media/biogas.4431ccbd6f9330464483.png",
@@ -10,11 +10,11 @@
     "static/media/icon3.png": "/fl-renu/static/media/icon3.49afff4b87190561de80.png",
     "static/media/icon2.png": "/fl-renu/static/media/icon2.4089a021f6681af1eabe.png",
     "index.html": "/fl-renu/index.html",
-    "main.f2d71ba9.css.map": "/fl-renu/static/css/main.f2d71ba9.css.map",
+    "main.09efa43f.css.map": "/fl-renu/static/css/main.09efa43f.css.map",
     "main.317ae4e3.js.map": "/fl-renu/static/js/main.317ae4e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2d71ba9.css",
+    "static/css/main.09efa43f.css",
     "static/js/main.317ae4e3.js"
   ]
 }
