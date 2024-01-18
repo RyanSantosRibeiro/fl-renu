@@ -1,0 +1,117 @@
+@import './../../scss/all.scss';
+
+.about {
+    background-color: #e4f0e8;
+    min-height: 600px;
+    padding: 140px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+
+    .default-title {
+        opacity: 0;
+    }
+
+    // &::before {
+    //     content: '';
+    //     width: 120%;
+    //     height: 80%;
+    //     top: 0;
+    //     position: absolute;
+    //     background-color: $color-1;
+    //     transform: rotate(5deg);
+    // }
+
+    .container {
+        gap: 40px;
+        flex-direction: column;
+        @include mobile {
+            display: flex;
+            gap: 30px;
+        }
+    }
+
+    &__line {
+        display: flex;
+        gap: 20px;
+
+        &__image {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            img {
+                max-height: 300px;
+            }
+        }
+
+        &__text {
+            
+
+            flex: 1;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 20px;
+
+            h4 {
+                text-transform: uppercase;
+                color: $color-4;
+                letter-spacing: 2px;
+                font-size: 3.55rem;
+                line-height: 3.6rem;
+            }
+    
+            p {
+                font-size: 20px;
+                letter-spacing: .5px;
+                line-height: 28px;
+                margin-bottom: 20px;
+                font-weight: 500;
+            }
+
+            img {
+                max-height: 100px;
+            }
+        }
+
+    }
+
+
+
+
+    &.animate {
+        .default-title {
+            @include fade("in","right", 300px, 3s);
+        }
+
+        ul {
+            @include fade("in","right", 300px, 3s,100ms);
+        }
+
+        .about__image {
+            @include fade("in","right", 300px, 3s,200ms);
+        }
+
+        .about__list__modal:nth-child(1) {
+            @include fade("in","right", 300px, 3s,600ms);
+        }
+        .about__list__modal:nth-child(2) {
+            @include fade("in","right", 300px, 3s,800ms);
+        }
+        .about__list__modal:nth-child(3) {
+            @include fade("in","right", 300px, 3s, 1000ms);
+        }
+        .about__list__modal:nth-child(4) {
+            @include fade("in","right", 300px, 3s, 1200ms);
+        }
+    }
+
+}

@@ -26,7 +26,7 @@ const Footer = () => {
                     <li>Contato</li>
                     <li><b>Whatsapp:</b> (00) 00000-0000</li>
                     <li><b>Email:</b> contato@email.com</li> 
-                    <li><b>Instagrma:</b> @reno</li>
+                    <li><b>Instagrma:</b> @renu</li>
                 </ul>
                 <ul>
                     <li>Parceiros</li>
@@ -36,7 +36,7 @@ const Footer = () => {
                 </ul>
                 <ul>
                     <li>Institucional</li>
-                    <li>A Reno</li>
+                    <li>A Renu</li>
                     <li>Para Consumidores</li>
                     <li>Para Produtores Rurais</li>
                 </ul>

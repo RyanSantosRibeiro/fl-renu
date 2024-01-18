@@ -40,9 +40,8 @@ const Header = () => {
                 <ul className={`header__menu ${open?'open':''}`}>
                     {/* <li>{window.location.hash}</li> */}
                     <img className='' src={fecha} alt='' onClick={()=>setOpen(!open)}/>
-                    <li><Link to='/fl-renu'>Home</Link></li>
                     <li><Link to='/fl-renu'>Porque biometano?</Link></li>
-                    <li><Link to='/fl-renu'>A Reno</Link></li>
+                    <li><Link to='/fl-renu'>A Renu</Link></li>
                     <li><Link to='/fl-renu'>Para Consumidores</Link></li>
                     <li><Link to='/fl-renu'>Para Produtores Rurais</Link></li>
                     <li><Link to='/fl-renu'>Nossos Contatos</Link></li>

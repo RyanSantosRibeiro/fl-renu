@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Banner from '../components/Banner';
 import Biometano from '../components/Biometano';
+import About from '../components/About';
 
 
 function Home() {
@@ -8,6 +9,7 @@ function Home() {
     <div className="Home">
       <Banner />
       <Biometano />
+      <About />
     </div>
   );
 }

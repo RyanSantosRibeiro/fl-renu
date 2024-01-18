@@ -1,7 +1,7 @@
 @import './../../scss/all.scss';
 
 .header {
-    background-color: rgba($color: $black, $alpha: 0);
+    background-color: rgba($color: #e4f0e8ff, $alpha: 1);
     height: auto;
     padding: 20px 0;
     
@@ -16,10 +16,10 @@
     transition: 400ms all ease-in-out;
     
     @include tablet {
-        background-color: rgba($color: $black, $alpha: 1);
+        background-color: rgba($color: #e4f0e8ff, $alpha: 1);
     }
     &.fixed {
-        background-color: rgba($color: $black, $alpha: 1);
+        background-color: rgba($color: #e4f0e8ff, $alpha: 1);
         box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.06);
 
 
@@ -52,7 +52,7 @@
             }
 
             img {
-                max-height: 100px;
+                max-height: 80px;
                 height: auto;
                 transition: 400ms all ease-in-out;
             }
@@ -60,12 +60,12 @@
     }
 
         .highlight {
-            background-color: rgba($color-1, .6);
+            background-color: rgba($color-4, .6);
             display: flex;
             border-radius: 4px;
             
             &:hover {
-                background-color: $color-1;
+                background-color: $color-4;
                 
                 a {
                     color: $text-color-pure;
@@ -119,7 +119,7 @@
         
         a {
             padding: 6px 12px;
-            color: $white;
+            color: $color-4;
             font-weight: $font-weight-500;
             font-size: 18px;
             transition: 200ms all ease-in-out;
@@ -127,7 +127,7 @@
             letter-spacing: 1px;
             
             &:hover {
-                color: $color-3;
+                color: $color-4;
 
                 &::after {
                     
@@ -146,7 +146,7 @@
                 content: "";
                 width: calc(100% - 24px);
                 height: 2px;
-                background-color: $color-3;
+                background-color: $color-4;
                 border-radius: 2px;
                 position: absolute;
                 bottom: -2px;

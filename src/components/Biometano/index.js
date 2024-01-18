@@ -11,7 +11,7 @@ import $ from 'jquery';
 const Biometano = () => {
 
     const active = (e) => {
-        if($("#biometano").offset().top - $(window).scrollTop() < 450 && !$(".biometano").hasClass("animate")) {
+        if($("#biometano").offset().top - $(window).scrollTop() < 750 && !$(".biometano").hasClass("animate")) {
             $(".biometano").addClass("animate");
         }
     }
