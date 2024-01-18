@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fl-renu/static/css/main.bc25e67a.css",
-    "main.js": "/fl-renu/static/js/main.a639472c.js",
+    "main.js": "/fl-renu/static/js/main.2987518f.js",
     "static/media/biogas.png": "/fl-renu/static/media/biogas.4431ccbd6f9330464483.png",
     "static/media/bg.jpg": "/fl-renu/static/media/bg.a0ab49da6e27e85c833d.jpg",
     "static/media/Dagelland-8MB7B.ttf": "/fl-renu/static/media/Dagelland-8MB7B.05a27b02a356b2622da9.ttf",
@@ -11,10 +11,10 @@
     "static/media/icon2.png": "/fl-renu/static/media/icon2.4089a021f6681af1eabe.png",
     "index.html": "/fl-renu/index.html",
     "main.bc25e67a.css.map": "/fl-renu/static/css/main.bc25e67a.css.map",
-    "main.a639472c.js.map": "/fl-renu/static/js/main.a639472c.js.map"
+    "main.2987518f.js.map": "/fl-renu/static/js/main.2987518f.js.map"
   },
   "entrypoints": [
     "static/css/main.bc25e67a.css",
-    "static/js/main.a639472c.js"
+    "static/js/main.2987518f.js"
   ]
 }
