@@ -29,9 +29,8 @@ const Footer = () => {
                     <li><b>Instagrma:</b> @renu</li>
                 </ul>
                 <ul>
-                    <li>Parceiros</li>
-                    <li>Equita</li>
-                    <li>Electy</li>
+                    <li>Sponsor</li>
+                    <li>Equitas</li>
                     <li></li>
                 </ul>
                 <ul>
