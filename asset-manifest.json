@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/fl-renu/static/css/main.6c1d1350.css",
-    "main.js": "/fl-renu/static/js/main.fc529066.js",
-    "static/media/biogas.png": "/fl-renu/static/media/biogas.4431ccbd6f9330464483.png",
+    "main.css": "/fl-renu/static/css/main.28bf689f.css",
+    "main.js": "/fl-renu/static/js/main.ea5c732f.js",
     "static/media/bg.jpg": "/fl-renu/static/media/bg.a0ab49da6e27e85c833d.jpg",
     "static/media/bg2.jpg": "/fl-renu/static/media/bg2.a9651b4adc95b4334908.jpg",
     "static/media/bg1.jpg": "/fl-renu/static/media/bg1.9aeac7b343aa37ab39ac.jpg",
+    "static/media/biogas.png": "/fl-renu/static/media/biogas.5ae285f7c4fb400b4602.png",
     "static/media/icon1.png": "/fl-renu/static/media/icon1.09913c1c1f807011f078.png",
     "static/media/icon2.png": "/fl-renu/static/media/icon2.4089a021f6681af1eabe.png",
     "static/media/Dagelland-8MB7B.ttf": "/fl-renu/static/media/Dagelland-8MB7B.05a27b02a356b2622da9.ttf",
@@ -13,11 +13,11 @@
     "static/media/icon4.png": "/fl-renu/static/media/icon4.22e34f9c13fb47b706d7.png",
     "static/media/icon3.png": "/fl-renu/static/media/icon3.49afff4b87190561de80.png",
     "index.html": "/fl-renu/index.html",
-    "main.6c1d1350.css.map": "/fl-renu/static/css/main.6c1d1350.css.map",
-    "main.fc529066.js.map": "/fl-renu/static/js/main.fc529066.js.map"
+    "main.28bf689f.css.map": "/fl-renu/static/css/main.28bf689f.css.map",
+    "main.ea5c732f.js.map": "/fl-renu/static/js/main.ea5c732f.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c1d1350.css",
-    "static/js/main.fc529066.js"
+    "static/css/main.28bf689f.css",
+    "static/js/main.ea5c732f.js"
   ]
 }
