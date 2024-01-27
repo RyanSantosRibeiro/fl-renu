@@ -5,7 +5,7 @@ import image from '../../assets/img/home/bg.jpg';
 
 import 'jquery.easing';
 
-const Banner = () => {
+const Banner = ({language}) => {
 
     const active = (e) => {
         const shape = $('.banner__shape-up');
@@ -19,10 +19,8 @@ const Banner = () => {
         const parallaxFactor2 = 0.1;
 
         const animationDuration = 500;
-        console.log(shape)
       
         const initialOffset = shape.offset()?.left || 0;
-        console.log(scrollTop);
       
         const distance = scrollTop - initialOffset;
         let animationSpeed = Math.abs(distance * parallaxFactor);
@@ -88,7 +86,6 @@ const Banner = () => {
         const x = mouse.client.x;
         const y = mouse.client.y;
 
-        console.log(x)
       
         const parallaxFactor = 0.1;
       
@@ -124,9 +121,17 @@ const Banner = () => {
 
             <div className='banner__text'>
                 <h2>RENU</h2>
-                <p>Atingindo suas metas de sustentabilidade <br></br> por meio do biometano</p>
+                {language == 0?
+                  <p>Atingindo suas metas de sustentabilidade <br></br> por meio do biometano</p>
+                  :
+                  <p>Achieving your sustainability goals <br></br> through biomethane</p>
+                } 
                 <div className='banner__text__buttons'>
+                  {language == 0 ?
                     <a href='#about' className=''>Saiba mais!</a>
+                  :
+                    <a href='#about' className=''>Learn more!</a>
+                  }
                     {/* <a href='#about' className='secondary-button'>Deixe-me ver mais!</a> */}
                 </div>
             </div>

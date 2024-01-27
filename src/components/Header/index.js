@@ -8,7 +8,7 @@ import $ from 'jquery';
 import { Link } from 'react-router-dom';
 
 
-const Header = () => {
+const Header = ({setLanguage,language}) => {
     const [open, setOpen] = useState(false);
 
     const handleScroll = () => {
@@ -40,11 +40,22 @@ const Header = () => {
                 <ul className={`header__menu ${open?'open':''}`}>
                     {/* <li>{window.location.hash}</li> */}
                     <img className='' src={fecha} alt='' onClick={()=>setOpen(!open)}/>
-                    <li><Link to='/fl-renu'>Porque biometano?</Link></li>
-                    <li><Link to='/fl-renu'>A Renu</Link></li>
-                    <li><Link to='/fl-renu'>Para Consumidores</Link></li>
-                    <li><Link to='/fl-renu'>Para Produtores Rurais</Link></li>
-                    <li><Link to='/fl-renu'>Nossos Contatos</Link></li>
+
+                    {language==0?<>
+                        <li><a href='#biometano'>Porque biometano?</a></li>
+                        <li><a href='#renu'>A Renu</a></li>
+                        <li><a href='#consumidores'>Para Consumidores</a></li>
+                        <li><a href='#produtores-rurais'>Para Produtores Rurais</a></li>
+                        <li><a href='#contato'>Nossos Contatos</a></li>
+                    </>:<>
+                        <li><a href='#biometano'>Why Biomethane?</a></li>
+                        <li><a href='#renu'>Renu</a></li>
+                        <li><a href='#consumidores'>For Consumers</a></li>
+                        <li><a href='#produtores-rurais'>For Farmers</a></li>
+                        <li><a href='#contato'>Contact</a></li>
+                    </>}
+                    
+                    <li className='language'><p onClick={()=>setLanguage(0)} className={language==0?'active':''}>BR</p><p onClick={()=>setLanguage(1)} className={language==1?'active':''}>EN</p></li>
 
                     
                 </ul>

@@ -14,17 +14,20 @@ import Me from './pages/Me';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Developed from './components/Developed';
+import { useState } from 'react';
 
 
 
 function App() {
+  const [language, setLanguage] = useState(0);
+
   return (
     <BrowserRouter>
-    <Header />
+    <Header setLanguage={setLanguage} language={language}/>
     <Routes>
-      <Route exact path="/" element={<Home />}/>
-      <Route exact path="/fl-renu" element={<Home />}/>
-      <Route exact path="/me" element={<Me />} />
+      <Route exact path="/" element={<Home language={language}/>} />
+      <Route exact path="/fl-renu" element={<Home language={language}/>}/>
+      <Route exact path="/me" element={<Me language={language}/>}/>
       {/* <Route path="users" element={<Users />}>
         <Route path="me" element={<OwnUserProfile />} />
         <Route path=":id" element={<UserProfile />} />

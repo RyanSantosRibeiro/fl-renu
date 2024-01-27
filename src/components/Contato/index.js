@@ -4,7 +4,7 @@ import logo from '../../assets/img/logo.png';
 import $ from 'jquery';
 
 
-const Contato = () => {
+const Contato = ({language}) => {
     const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [phone, setPhone] = useState('');
@@ -34,7 +34,7 @@ const Contato = () => {
     return maskedEmail;
   };
 
-  const handleSendEmail = () => {
+  const handleSendEmail = ({language}) => {
     const subject = encodeURIComponent('Assunto do Email');
     const body = encodeURIComponent(`Nome: ${firstName} ${lastName}%0D%0ATelefone: ${phone}%0D%0AEmail: ${email}%0D%0AMensagem: ${message}`);
     
@@ -57,37 +57,60 @@ const Contato = () => {
         <section className="contato" id='contato'>
             <div className="container">
                 <ul>
-                    <li>Suporte ao produtor rural</li>
-                    <li>Entre em contato por e-mail </li>
-                    <li><b>produtor@renu.com.br</b></li> 
-                    <li>ou por telefone via </li>
-                    <li><b>+55 (11) XXXX-XXXX</b></li>
+                    {language==0?<>
+                        <li>Suporte ao produtor rural</li>
+                        <li>Entre em contato por e-mail </li>
+                        <li><b>produtor@renu.com.br</b></li> 
+                        <li>ou por telefone via </li>
+                        <li><b>+55 (11) XXXX-XXXX</b></li>
+                    </>:<>
+                    {/* INGLES */}
+                        <li>Support to farmers</li>
+                        <li>Contact us via email  </li>
+                        <li><b>produtor@renu.com.br</b></li> 
+                        <li>or call</li>
+                        <li><b>+55 (11) XXXX-XXXX</b></li>
+                    </>}
                 </ul>
                 <ul>
-                    <li>Suporte á empresa consumidora</li>
-                    <li>Entre em contato por e-mail </li>
-                    <li><b>consumidor@renu.com.br</b></li> 
-                    <li>ou por telefone via </li>
-                    <li><b>+55 (11) XXXX-XXXX</b></li>
+                    {language==0?<>
+                        <li>Suporte à empresa consumidora</li>
+                        <li>Entre em contato por e-mail </li>
+                        <li><b>consumidor@renu.com.br</b></li> 
+                        <li>ou por telefone via </li>
+                        <li><b>+55 (11) XXXX-XXXX</b></li>
+                    </>:<>
+                    {/* INGLES */}
+                        <li>Support to companies</li>
+                        <li>Contact us via email  </li>
+                        <li><b>consumidor@renu.com.br</b></li> 
+                        <li>or call</li>
+                        <li><b>+55 (11) XXXX-XXXX</b></li>
+                    </>}
                 </ul>
                 <ul className='contato__box'>
-                    <li>Inicie uma conversa conosco</li>
-                    <li>Entre em contato com nossa equipe de vendas para ver como podemos ajudar</li>
+                    {language==0?<>
+                        <li>Inicie uma conversa conosco</li>
+                        <li>Entre em contato com nossa equipe de vendas para ver como podemos ajudar</li>
+                    </>:<>
+                        <li>Start The Conversation</li>
+                        <li>Contact our sales team to find out what Renu can do for you.</li>
+                    </>}
                     <div>
-                        <input type="text" placeholder='Primeiro Nome' value={firstName} onChange={(e) => setFirstName(e.target.value)} />
-                        <input type="text" placeholder='Sobrenome' value={lastName} onChange={(e) => setLastName(e.target.value)} />
+                        <input type="text" placeholder={`${language==0?'Primeiro Nome':'First Name'}`} value={firstName} onChange={(e) => setFirstName(e.target.value)} />
+                        <input type="text" placeholder={`${language==0?'Sobrenome':'Last Name'}`} value={lastName} onChange={(e) => setLastName(e.target.value)} />
                     </div>
                     <div>
-                        <input type="text" placeholder='Telefone' value={formatPhone(phone)} onChange={(e) => setPhone(e.target.value)} />
+                        <input type="text" placeholder={`${language==0?'Telefone':'Phone'}`} value={formatPhone(phone)} onChange={(e) => setPhone(e.target.value)} />
                         <input type="email" placeholder='E-mail' value={formatEmail(email)} onChange={(e) => setEmail(e.target.value)} />
                     </div>
                     <div>
-                        <textarea  placeholder='Mensagem' value={message} onChange={(e) => setMessage(e.target.value)} />
+                        <textarea  placeholder={`${language==0?'Mensagem':'Message'}`} value={message} onChange={(e) => setMessage(e.target.value)} />
                     </div>
-                    <button onClick={handleSendEmail}>Enviar Email</button>
+                    <button onClick={handleSendEmail}>{language==0?'Enviar':'Send'}</button>
                 </ul>
             </div>
-            <a href='/' className='float-button'>Inicie uma conversa!</a>
+            <a href='#contato' className='float-button'>{language==0?'Inicie uma conversa':'Start The Conversation'}</a>
         </section>
     )
 }

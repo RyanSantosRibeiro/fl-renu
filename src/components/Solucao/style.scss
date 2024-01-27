@@ -3,7 +3,7 @@
 .solucao {
     // background-color: #e4f0e8;
     min-height: 600px;
-    padding: 80px 0;
+    padding: 0px 0;
 
     display: flex;
     align-items: center;
@@ -15,6 +15,13 @@
 
     .default-title {
         opacity: 0;
+    }
+
+    #consumidores {
+        padding-top: 80px;
+    }
+    #produtores-rurais {
+        padding-top: 80px;
     }
 
     // &::before {
@@ -59,7 +66,8 @@
         // background-color: $color-7;
         border-radius: 16px;
         padding: 20px;
-        height: 600px;
+        min-height: 600px;
+        height: auto;
 
         display: flex;
         align-items: flex-start;
@@ -81,6 +89,10 @@
             font-size: 16px;
             line-height: 22px;
             letter-spacing: .5px;
+        }
+
+        & > p {
+            margin-bottom: 30px;
         }
 
         img {
@@ -141,6 +153,11 @@
         img {
             height: 100%;
             width: auto;
+        }
+
+        &--logo {
+            background-size: 200px;
+            background-repeat: no-repeat;
         }
     }
 

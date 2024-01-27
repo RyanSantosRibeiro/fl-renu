@@ -39,6 +39,29 @@
     
     }
 
+    &__logo {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -70%);
+        height: 200px;
+        width: 200px;
+        top: 50%;
+        background-color: #e6e9f0;
+        border-radius: 1000px;
+        z-index: 11;
+
+        padding: 30px;
+        box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.06);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+
 
     &__modal {
         opacity: 0;
@@ -47,7 +70,7 @@
         background-color: $color-7;
         border-radius: 16px;
         padding: 26px;
-        height: 700px;
+        height: 750px;
 
         display: flex;
         align-items: center;
@@ -65,7 +88,7 @@
             text-align: center;
         }
         
-        p {
+        & > p {
             // color: white;
             font-size: 18px;
             min-height: 70px;
@@ -97,9 +120,23 @@
             justify-content: flex-start;
             gap: 10px;
 
+            &:first-child {
+                font-size: 20px;
+                font-weight: 700;
+                color: $color-4;
+            }
+
             img {
                 width: 20px;
                 height: 20px;
+            }
+
+            b {
+                color: $color-4;
+            }
+
+            p {
+                height: auto;
             }
         }
     }
