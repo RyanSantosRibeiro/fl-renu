@@ -9,6 +9,17 @@
     background-repeat: no-repeat;
     height: calc(100vh - 124px);
     margin-top: 124px;
+    
+    @include tablet {
+        background-attachment:local;
+        height: 300px;
+        background-size: contain;
+        background-position: center;
+    }
+
+    @include mobile {
+        height: 200px;
+    }
 
     display: flex;
     align-items: center;
@@ -37,9 +48,7 @@
         position: absolute;
     }
 
-    @include mobile {
-        height: 500px;
-    }
+    
     
     &__image {
         max-width: 100%;

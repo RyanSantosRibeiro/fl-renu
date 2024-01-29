@@ -36,9 +36,28 @@
         }
     }
 
+    &__logos {
+        border: 2px solid $color-4;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+
+        div {
+            display: flex;
+
+        }
+    }
+
     &__line {
         display: flex;
         gap: 20px;
+
+        @include mobile {
+            flex-direction: column;
+            gap: 20px;
+        }
 
         &__image {
             flex: 1;
@@ -62,12 +81,20 @@
             flex-direction: column;
             gap: 20px;
 
+            @include mobile {
+                align-items: center;
+            }
+
             h4 {
                 text-transform: uppercase;
                 color: $color-4;
                 letter-spacing: 2px;
                 font-size: 3.55rem;
                 line-height: 3.6rem;
+
+                @include mobile {
+                    font-size: 32px;
+                }
             }
     
             p {

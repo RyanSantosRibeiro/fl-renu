@@ -3,6 +3,7 @@ import './style.scss';
 import icon1 from '../../assets/img/solucao/icon1.png';
 import icon2 from '../../assets/img/solucao/icon2.png';
 import logo from '../../assets/img/logo.png';
+import arrow from '../../assets/img/arrow.png';
 import ok from '../../assets/img/solucao/correct.png';
 import $ from 'jquery';
 
@@ -22,13 +23,11 @@ const Publico = ({language}) => {
     return  (
         <section className="publico" id='publico'>
              <div className='container'>
-                <h2 className='default-title'>{language==0?'Nossas Soluções':'Our Solutions'}</h2>
+                <h2 className='default-title'>{language==0?'Nossas Soluções':'Our Solutions'}
+                <span>{language==0?'1. Modelo de produção de biometano e comercialização para a indústria':'1. Biomethane production and marketing solution for the industry'}</span></h2>
             </div>
             <div className="container">
-                    <div className='publico__logo'>
-                    <img  src={logo} alt=''/>
-
-                    </div>
+                    {/* <div className='publico__logo'> <img  src={logo} alt=''/></div> */}
                     <div className='publico__left publico__modal' >
                         {language ==0 ?<>
                             <h3>Pequenos e médios produtores</h3>
@@ -89,7 +88,57 @@ const Publico = ({language}) => {
                         </>}
                         
                     </div>
-                </div>
+            </div>
+            <div className='container'>
+                <h2 className='default-title default-title-2'>{language==0?'Nossas Soluções':'Our Solutions'}
+                <span>{language==0?'2. Modelo de locação de módulos de produção de biometano para produtores rurais':'2. Leasing of biomethane production modules for rural producers'}</span></h2>
+            </div>
+            <div className="container">
+                    {/* <div className='publico__logo'> <img  src={logo} alt=''/></div> */}
+                    <div className='publico__left publico__modal publico__modal-2' >
+                        {language ==0 ?<>
+                            <img src={logo}/>
+                            <p>A Renu é a proprietária de módulos de purificação de biogás em biometano</p>
+                            
+                        </>:<>
+                            {/* INGLES */}
+                            <img src={logo}/>
+                            <p>Renu owns the modules for the purification of biogas into biomethane.</p>
+                        </>}
+                        
+                    </div>
+                    <div className='publico__center publico__modal publico__modal-2'>
+                        {language == 0 ? <>
+                            <p>O produtor utiliza o módulo e evita desembolso de compra para aquisição</p>
+                            <img src={arrow}/>
+                            <p className='middle'><b>Contrato de leasing:</b> O produtor tem a posse do módulo e pode utilizá-lo no período do contrato para gerar biometano</p>
+                            <img className='reverse dir' src={arrow}/>  
+                            <p>O produtor tem a opção de comprar o módulo após prazo acordado em contrato</p>
+                            
+                        </>:<>
+                            {/* INGLES */}
+                            <p>The producer operates the module, avoiding upfront capital outlay</p>
+                            <img src={arrow}/>
+                            <p className='middle'>Leasing Agreement: The producer holds ownership of the module and operates it throughout the contract period to enable biomethane generation</p>
+                            <img className='reverse dir' src={arrow}/>
+                            <p>The producer has the option to acquire the module at the agreed-upon timeframe</p>
+                        </>}
+                        
+                    </div>
+                    <div className='publico__right publico__modal publico__modal-2'>
+                        {language == 0 ? <>
+                            <h3>Pequenos e médios produtores</h3>
+                            <img src={icon1}/>
+                            <p>Troca de <b>Capex</b> por <b>Opex</b> e economia relevante com a utilização do biometano</p>
+                        </>:<>
+                            {/* INGLES */}
+                            <h3>Small and medium-sized producers</h3>
+                            <img src={icon1}/>
+                            <p>Switching from Capex to Opex and realizing substantial savings with the adoption of biomethane.</p>
+                        </>}
+                        
+                    </div>
+            </div>
         </section>
     )
 }

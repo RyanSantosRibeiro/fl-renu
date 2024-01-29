@@ -19,6 +19,25 @@ body {
     text-transform: uppercase;
     width: 100%;
     text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    
+    span {
+        color: $color-4;
+        font-size: 20px;
+        text-transform: initial;
+        margin-top: 10px;
+
+        @include tablet {
+            font-size: 16px;
+        }
+        
+    }
+
+    @include tablet {
+        font-size: 30px;
+    }
 }
 
 // html,body {

@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import './style.scss';
 import logo from '../../assets/img/logo.png';
+import logo1 from '../../assets/img/logo1.png';
+import logo2 from '../../assets/img/logo2.png';
 import $ from 'jquery';
 
 
@@ -33,6 +35,15 @@ const About = ({language}) => {
                         <p>A Renu é uma plataforma integrada de geração e distribuição de biometano.</p>
                         <p>Geramos biometano a partir de uma gama de pequenos e médios produtores de suínos e gado e o comercializamos por meio de contratos de fornecimento.</p>
                         <p>Além disso, temos uma solução de aluguel de módulos de biometano direto para o produtor rural, que pode gerar biometano para consumo próprio.</p>
+                        <div className='about__logos'>
+                            <div>
+                                <img src={logo1}/>
+                                <img src={logo2}/>
+                            </div>
+                            <div>
+                                <p>Somos uma empresa investida e incubada pelo braço de transição energética da Equitas Investimentos, que é uma gestora de recursos baseada em São Paulo. <br></br>O braço de transição energética da Equitas também conta com um investimento na Electy, energytech que comercializa energia limpa de forma 100% digital.</p>
+                            </div>
+                        </div>
                     </div>
                     :   
                     <div className='about__line__text'>

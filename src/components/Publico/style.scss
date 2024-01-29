@@ -13,8 +13,16 @@
     overflow: hidden;
     gap: 20px;
 
+    @include mobile {
+        padding: 80px 0 20px;
+    }
+
     .default-title {
         opacity: 0;
+
+        &-2 {
+            margin-top: 40px;
+        }
     }
 
     // &::before {
@@ -32,8 +40,14 @@
         flex-direction: row;
         align-items: flex-start;
 
+        &:last-child {
+            @include tablet {
+                gap: 0;
+            }
+        }
+
         @include mobile {
-            display: flex;
+            flex-direction: column;
             gap: 30px;
         }
     
@@ -60,6 +74,11 @@
             width: auto;
             height: 100%;
         }
+
+
+        @include mobile {
+            display: none;
+        }
     }
 
 
@@ -70,7 +89,8 @@
         background-color: $color-7;
         border-radius: 16px;
         padding: 26px;
-        height: 750px;
+        min-height: 750px;
+        height: auto;
 
         display: flex;
         align-items: center;
@@ -99,6 +119,8 @@
         img {
             height: 180px;
             width: auto;
+
+            
         }
 
         ul {
@@ -139,6 +161,62 @@
                 height: auto;
             }
         }
+
+        &-2 {
+
+            min-height: 500px;
+            justify-content: space-between;
+            
+            &:nth-child(2) {
+                align-items: center;
+                background-color: transparent;
+
+                p {
+                    &:first-child, &:last-child {
+                        color: $color-4;
+                        font-weight: 600;
+                        font-size: 20px;
+                    }
+                    
+                }
+                
+                @include mobile {
+                    
+                    .middle {
+                        max-width: 60%;
+
+                    }
+
+                    img {
+                        position: absolute;
+                        transform: rotate(-90deg);
+                        left: -30px;
+                        top: 40%;
+                        
+                        
+                    }
+                    .dir {
+                        transform: rotate(90deg);
+                        right: -30px;
+                        left: initial;
+                    }
+                }
+            }
+
+            img {
+                max-width: 200px;
+                height: auto;
+            }
+
+            .reverse {
+                transform: rotate(180deg);
+            }
+
+            p {
+                padding: 20px;
+                text-align: center;
+            }
+        }
     }
 
     &__img {
@@ -149,6 +227,7 @@
 
         background-position: center;
         background-size: cover;
+        
 
         img {
             height: 100%;
