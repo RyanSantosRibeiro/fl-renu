@@ -51,6 +51,16 @@ const About = ({language}) => {
                         <h4>About Us</h4>
                         <p>Renu is an integrated platform for the generation and distribution of biomethane.</p>
                         <p>We produce biomethane from a range of small and medium-sized producers of pigs and cattle, and we market it to companies through supply contracts.</p>
+                        <p>Additionally, we offer a solution for renting biomethane modules directly to the rural producer, enabling the generation of biomethane for self-consumption</p>
+                        <div className='about__logos'>
+                            <div>
+                                <img src={logo1}/>
+                                <img src={logo2}/>
+                            </div>
+                            <div>
+                                <p>Renu is invested and incubated by the energy transition arm of Equitas Investimentos, an asset management company based in São Paulo.<br></br>The energy transition arm of Equitas also holds an investment in Electy, an energytech company that trades clean energy in a 100% digital format.</p>
+                            </div>
+                        </div>
                     </div> 
                 }
                 </div>

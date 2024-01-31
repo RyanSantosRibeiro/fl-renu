@@ -122,15 +122,15 @@ const Banner = ({language}) => {
             <div className='banner__text'>
                 <h2>RENU</h2>
                 {language == 0?
-                  <p>Atingindo suas metas de sustentabilidade <br></br> por meio do biometano</p>
+                  <p>Reduzindo seus custos de combustível de forma sustentável<br></br> e limpa por meio do biometano</p>
                   :
-                  <p>Achieving your sustainability goals <br></br> through biomethane</p>
+                  <p>Reducing your fuel costs sustainably <br></br>and cleanly through biomethane</p>
                 } 
                 <div className='banner__text__buttons'>
                   {language == 0 ?
-                    <a href='#about' className=''>Saiba mais!</a>
+                    <a href='#renu' className=''>Saiba mais!</a>
                   :
-                    <a href='#about' className=''>Learn more!</a>
+                    <a href='#renu' className=''>Learn more!</a>
                   }
                     {/* <a href='#about' className='secondary-button'>Deixe-me ver mais!</a> */}
                 </div>

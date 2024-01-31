@@ -59,11 +59,11 @@ const Solucao = ({language}) => {
                                 <li><img src={ok}/><p>O consumidor terá <b>baixa necessidade de Capex</b> (investimentos), focado apenas na substituição da frota por veículos movidos a biometano. Além disso, o projeto é implementado de forma faseada.</p></li>
 
                                 <li><img src={ok}/><p>Ao adotar 100% de biometano na frota, é possível obter <b>redução de mais de 85% da emissão de carbono</b></p></li>
-                                <li><img src={ok}/><p>A utilização de biometano permite economia financeira relevante, com <b>redução de 50 a 80% dos custos totais com combustível</b> na sua empresa</p></li>
+                                <li><img src={ok}/><p>A utilização de biometano permite economia financeira relevante, com <b>redução de 20% a 30% dos custos totais com combustível</b> na sua empresa</p></li>
                             </ul>
-                            <a href='/fl-renu'>
+                            {/* <a href='/fl-renu'>
                                 Saiba mais
-                            </a>
+                            </a> */}
                         </>:<>
                             {/* INGLES */}
                             <h3>For Consumers</h3>
@@ -77,11 +77,11 @@ const Solucao = ({language}) => {
                                 <li><img src={ok}/><p><b>Reduced capital expenditure requirements,</b> with a primary focus on fleet replacement through biomethane-powered vehicles. Moreover, the <b>project is executed in gradual phases</b></p></li>
 
                                 <li><img src={ok}/><p>By adopting 100% biomethane in the fleet, it is possible to achieve a <b>reduction of over 85% in carbon emissions</b></p></li>
-                                <li><img src={ok}/><p>The use of biomethane allows for <b>significant financial savings,</b> with a reduction of 50 to 80% in total fuel costs for your company</p></li>
+                                <li><img src={ok}/><p>The use of biomethane allows for <b>significant financial savings,</b> with a reduction of 20% to 30% in total fuel costs for your company</p></li>
                             </ul>
-                            <a href='/fl-renu'>
+                            {/* <a href='/fl-renu'>
                                 Learn more
-                            </a>
+                            </a> */}
                         </>}
                         
                     </div>
@@ -107,9 +107,9 @@ const Solucao = ({language}) => {
                                 <li><img src={ok}/><p><b>Caso o produtor não possua biodigestor</b> na fazenda, a Renu viabiliza essa estrutura</p></li>
                                 <li><img src={ok}/><p>Caso o produtor tenha interesse em <b>alugar o módulo de biometano,</b> a Renu possui essa oferta para você</p></li>
                             </ul>
-                            <a href='/fl-renu'>
+                            {/* <a href='/fl-renu'>
                                 Saiba mais
-                            </a>
+                            </a> */}
                         </>:<>
                             {/* INGLES */}
                             <h3>For Farmers</h3>
@@ -121,9 +121,9 @@ const Solucao = ({language}) => {
                                 <li><img src={ok}/><p>We generate a <b>significant additional monthly income</b> for the producer based on the biomethane production, regardless of the amount sold</p></li>
                                 <li><img src={ok}/><p><b>If the producer does not have a biodigester</b> on the farm, Renu facilitates the establishment of this structure</p></li>
                             </ul>
-                            <a href='/fl-renu'>
+                            {/* <a href='/fl-renu'>
                                 Learn more
-                            </a>
+                            </a> */}
                         </>}
                     </div>
                 </div>

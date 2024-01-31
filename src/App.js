@@ -33,7 +33,7 @@ function App() {
         <Route path=":id" element={<UserProfile />} />
       </Route> */}
     </Routes>
-    <Footer/>
+    <Footer setLanguage={setLanguage} language={language}/>
     <Developed />
   </BrowserRouter>
   );

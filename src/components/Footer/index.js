@@ -29,14 +29,14 @@ const Footer = ({language}) => {
                 </ul>
                 <ul>
                     <li>Sponsor</li>
-                    <li>Equitas</li>
+                    <li><a href='www.equitas.com.br'>Equitas</a></li>
                     <li></li>
                 </ul>
                 <ul>
                     <li>Links</li>
-                    <li>A Renu</li>
-                    <li>Para Consumidores</li>
-                    <li>Para Produtores Rurais</li>
+                    <li><a href='#renu'>Renu</a></li>
+                    <li><a href='#consumidores'>{language==0? 'Para Consumidores': 'For Consumers'}</a></li>
+                    <li><a href='#produtores-rurais'>{language==0? 'Para Produtores Rurais': 'For Farmers'}</a></li>
                 </ul>
             </div>
             {/* <a href='/' className='float-button'>Inicie uma conversa!</a> */}

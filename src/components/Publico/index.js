@@ -27,7 +27,7 @@ const Publico = ({language}) => {
                 <span>{language==0?'1. Modelo de produção de biometano e comercialização para a indústria':'1. Biomethane production and marketing solution for the industry'}</span></h2>
             </div>
             <div className="container">
-                    {/* <div className='publico__logo'> <img  src={logo} alt=''/></div> */}
+                    <div className='publico__logo'> <img  src={logo} alt=''/></div>
                     <div className='publico__left publico__modal' >
                         {language ==0 ?<>
                             <h3>Pequenos e médios produtores</h3>
@@ -66,7 +66,7 @@ const Publico = ({language}) => {
                                 <li><img src={ok}/><p><b>Menor risco operacional:</b> geração de biometano descentralizada = <b>estabilidade de fornecimento</b></p></li>
                                 <li><img src={ok}/><p><b>Capex reduzido</b> e <b>implantação em etapas</b></p></li>
                                 <li><img src={ok}/><p>Redução drástica da <b>emissão de carbono</b></p></li>
-                                <li><img src={ok}/><p><b>Economia</b>  de 50-80% do custo com  combustível</p></li>
+                                <li><img src={ok}/><p><b>Economia</b>  de 20-30% do custo com  combustível</p></li>
                                 <li><img src={ok}/><p><b>Flexibilidade:</b>  opção por receber o biometano direto na planta ou utilizar logística própria</p></li>
                                 <li><img src={ok}/><p>Auxílio na <b>conversão da frota</b> para biometano</p></li>
                             </ul>
@@ -81,8 +81,8 @@ const Publico = ({language}) => {
                                 <li><img src={ok}/><p><b>Reduced operational risk:</b> decentralized biomethane generation = supply stability</p></li>
                                 <li><img src={ok}/><p><b>Lower Capex and phased deployment.</b></p></li>
                                 <li><img src={ok}/><p>Substantial reduction in <b>carbon emissions.</b></p></li>
-                                <li><img src={ok}/><p><b>Reduction of 50-80% on fuel cost</b></p></li>
-                                <li><img src={ok}/><p><b>Flexibility:</b>option to receive biomethane directly at the plant or utilize own logistics</p></li>
+                                <li><img src={ok}/><p><b>Reduction of 20-30% on fuel cost</b></p></li>
+                                <li><img src={ok}/><p><b>Flexibility:</b>  option to receive biomethane directly at the plant or utilize own logistics</p></li>
                                 <li><img src={ok}/><p>Assistance in <b>fleet conversion</b></p></li>
                             </ul>
                         </>}
@@ -90,7 +90,7 @@ const Publico = ({language}) => {
                     </div>
             </div>
             <div className='container'>
-                <h2 className='default-title default-title-2'>{language==0?'Nossas Soluções':'Our Solutions'}
+                <h2 className='default-title default-title-2'>
                 <span>{language==0?'2. Modelo de locação de módulos de produção de biometano para produtores rurais':'2. Leasing of biomethane production modules for rural producers'}</span></h2>
             </div>
             <div className="container">

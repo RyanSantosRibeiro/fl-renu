@@ -4,7 +4,7 @@ import image1 from '../../assets/img/biometano/icon1.png';
 import image2 from '../../assets/img/biometano/icon2.png';
 import image3 from '../../assets/img/biometano/icon3.png';
 import image4 from '../../assets/img/biometano/icon4.png';
-import biogas from '../../assets/img/biometano/biogas.png';
+import biogas from '../../assets/img/biometano/biogas.jpeg';
 import $ from 'jquery';
 
 
@@ -41,7 +41,7 @@ const Biometano = ({language}) => {
                 <ul>
                     {/* INGLES */}
                     <li>
-                    Biomethane derived from the purification (upgrading) of biogas, which is a gas extracted from the anaerobic decomposition process (in the absence of oxygen) of organic waste. These organic wastes can come from garbage, urban sewage, agriculture, livestock, pig farming, and dairy farming.
+                    Biomethane is a product derived from the purification (upgrading) of biogas, which is a gas extracted from the anaerobic decomposition process (in the absence of oxygen) of organic waste. These organic wastes can come from garbage, urban sewage, agriculture, livestock, pig farming, and dairy farming.
 
 
                     </li>
@@ -73,9 +73,9 @@ const Biometano = ({language}) => {
                     <div className='biometano__list__modal'>
                         <img src={image3}/>
                         {language==0? 
-                        <p><b>Economia:</b> Redução entre 50% e 80% dos custos com combustível</p>
+                        <p><b>Economia:</b> Redução entre 20% e 30% dos custos com combustível</p>
                         :
-                        <p><b>Economy:  </b> 50 to 80% reduction on fuel costs</p>
+                        <p><b>Economy:  </b> 20% to 30% reduction on fuel costs</p>
                         }
                     </div>
                     <div className='biometano__list__modal'>

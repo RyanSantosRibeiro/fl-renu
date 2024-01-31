@@ -169,6 +169,11 @@
                 }
             }
 
+            @include desktop {
+                font-size: 16px;
+                padding: 5px;
+            }
+
             @include tablet {
                 font-size: 20px;
             }

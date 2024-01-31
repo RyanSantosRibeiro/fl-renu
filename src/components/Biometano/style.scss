@@ -101,7 +101,7 @@
          /* The image used */
 
         /* Set a specific height */
-        min-height: 400px;
+        min-height: 500px;
         width: 100%;
         border-radius: 16px;
 
@@ -113,8 +113,8 @@
         overflow: hidden;
 
         &::after {
-            content: '';
-            background-color: rgba(#000, .4);
+            // content: '';
+            // background-color: rgba(#000, .4);
             width: 100%;
             height: 100%;
             position: absolute;

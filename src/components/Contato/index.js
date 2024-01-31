@@ -58,34 +58,18 @@ const Contato = ({language}) => {
             <div className="container">
                 <ul>
                     {language==0?<>
-                        <li>Suporte ao produtor rural</li>
-                        <li>Entre em contato por e-mail </li>
-                        <li><b>produtor@renu.com.br</b></li> 
+                        <li className='highlight'>Suporte</li>
+                        <li>Entre em contato por e-mail via</li>
+                        <li><b>suporte@renu.com.br</b></li> 
                         <li>ou por telefone via </li>
-                        <li><b>+55 (11) XXXX-XXXX</b></li>
+                        <li><b>+55 (11) 3049-3000</b></li>
                     </>:<>
                     {/* INGLES */}
-                        <li>Support to farmers</li>
-                        <li>Contact us via email  </li>
-                        <li><b>produtor@renu.com.br</b></li> 
+                        <li className='highlight'>Support</li>
+                        <li>Contact us by email  </li>
+                        <li><b>suporte@renu.com.br</b></li> 
                         <li>or call</li>
-                        <li><b>+55 (11) XXXX-XXXX</b></li>
-                    </>}
-                </ul>
-                <ul>
-                    {language==0?<>
-                        <li>Suporte à empresa consumidora</li>
-                        <li>Entre em contato por e-mail </li>
-                        <li><b>consumidor@renu.com.br</b></li> 
-                        <li>ou por telefone via </li>
-                        <li><b>+55 (11) XXXX-XXXX</b></li>
-                    </>:<>
-                    {/* INGLES */}
-                        <li>Support to companies</li>
-                        <li>Contact us via email  </li>
-                        <li><b>consumidor@renu.com.br</b></li> 
-                        <li>or call</li>
-                        <li><b>+55 (11) XXXX-XXXX</b></li>
+                        <li><b>+55 (11) 3049-3000</b></li>
                     </>}
                 </ul>
                 <ul className='contato__box'>
