@@ -14,6 +14,11 @@
     width: 100%;
     z-index: 100;
     transition: 400ms all ease-in-out;
+
+    @media (max-width: 1400px) {
+        padding: 5px 0;
+    }
+    
     
     @include tablet {
         background-color: rgba($color: #e4f0e8ff, $alpha: 1);
@@ -56,6 +61,10 @@
                 max-height: 100px;
                 height: auto;
                 transition: 400ms all ease-in-out;
+
+                @media (max-width: 1400px) {
+                    max-height: 80px;
+                }
                 
                 @include tablet {
                     max-height: 80px;

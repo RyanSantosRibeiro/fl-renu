@@ -24,8 +24,8 @@ const Footer = ({language}) => {
             <div className="container">
                 <ul>
                     <li>{language==0? 'Contato': 'Contact'}</li>
-                    <li><b>Whatsapp:</b> (00) 00000-0000</li>
-                    <li><b>Email:</b> contato@email.com</li>
+                    <li><b>Whatsapp:</b> +55 (11) 3049-3000</li>
+                    <li><b>Email:</b> suporte@renu.com.br</li>
                 </ul>
                 <ul>
                     <li>Sponsor</li>

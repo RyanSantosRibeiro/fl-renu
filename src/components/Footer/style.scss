@@ -75,7 +75,11 @@
 
         li {
             color: $white;
-            font-size: 14px;
+            
+            a{
+                color: $white;
+                font-size: 14px;
+            }
 
             @include tablet {
                 font-size: 14px;

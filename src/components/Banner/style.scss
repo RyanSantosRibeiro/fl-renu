@@ -10,6 +10,11 @@
     height: calc(100vh - 124px);
     margin-top: 124px;
     
+    @media (max-width: 1400px) {
+        margin-top: 90px;
+        
+    }
+    
     @include tablet {
         background-attachment:local;
         height: 300px;
@@ -79,8 +84,12 @@
 
         max-width: 90vw;
 
-        @include tablet {
+        @media (max-width: 1400px) {
             top: 20%;
+            
+        }
+
+        @include tablet {
         }
 
 
