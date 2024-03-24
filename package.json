@@ -19,6 +19,7 @@
   "homepage": "https://renuenergia.com.br/",
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
