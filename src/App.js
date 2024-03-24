@@ -24,15 +24,17 @@ function App() {
   return (
     <BrowserRouter>
     <Header setLanguage={setLanguage} language={language}/>
-    <Routes>
+    {/* <Routes>
       <Route exact path="/" element={<Home language={language}/>} />
+      <Route path="/" element={<Home language={language}/>} />
       <Route exact path="/fl-renu" element={<Home language={language}/>}/>
       <Route exact path="/me" element={<Me language={language}/>}/>
-      {/* <Route path="users" element={<Users />}>
+      <Route path="users" element={<Users />}>
         <Route path="me" element={<OwnUserProfile />} />
         <Route path=":id" element={<UserProfile />} />
-      </Route> */}
-    </Routes>
+      </Route>
+    </Routes> */}
+    <Home language={language}/>
     <Footer setLanguage={setLanguage} language={language}/>
     <Developed />
   </BrowserRouter>
